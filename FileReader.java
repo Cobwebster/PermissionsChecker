@@ -39,6 +39,7 @@ public class FileReader {
     //4906a0a7-8ec4-49d8-9b12-a43eb6d25981
     //C:\Users\Admin\Desktop\Working\KitPvPPurchaseHistory
 
+    // Working on this part, don't judge.
     public void readFile(String input){
 
             while (x.hasNext()) {
