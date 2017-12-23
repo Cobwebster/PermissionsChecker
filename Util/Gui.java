@@ -68,7 +68,6 @@ public class Gui extends JFrame {
                 File userFile = new File(directory.getText());
 
                 if (userFile.exists()) {
-
                     if(name.isSelected()){
 
                         try {
@@ -92,13 +91,10 @@ public class Gui extends JFrame {
                                 JOptionPane.showMessageDialog(null, String.format("Status: %s", readFile.getStatus()));
                                 return;
                             }
-
                             JOptionPane.showMessageDialog(null, String.format("Rank: %s\nStatus: %s\nUUD: %s", readFile.getRank(), readFile.getStatus(), parseduuid));
-
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-
                     } else {
 
                         FileReader readFile = new FileReader();
@@ -110,7 +106,6 @@ public class Gui extends JFrame {
                             JOptionPane.showMessageDialog(null, String.format("Status: %s", readFile.getStatus()));
                             return;
                         }
-
                         JOptionPane.showMessageDialog(null, String.format("Rank: %s\nStatus: %s\nUUD: %s", readFile.getRank(), readFile.getStatus(), tf.getText()));
                     }
                 } else {
@@ -137,19 +132,14 @@ public class Gui extends JFrame {
                     JOptionPane.showMessageDialog(null, String.format("Length: %s\nStatus: %s\nMode: %s", readFile.getLength(), readFile.getStatus(), "UUID"));
                 }
             }
-
             else {
-
                 JOptionPane.showMessageDialog(null, "Please enter a valid directory");
-
-
             }
         }
     }
 
     private class CheckHandler implements ItemListener{
         public void itemStateChanged(ItemEvent event){
-
 
         }
     }
