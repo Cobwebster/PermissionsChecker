@@ -69,8 +69,6 @@ public class Gui extends JFrame {
 
                     if(name.isSelected()){
 
-                        //test
-
                         try {
 
                             HttpsURLConnection connection = (HttpsURLConnection) new URL("https://api.mojang.com/users/profiles/minecraft/" + tf.getText()).openConnection();
