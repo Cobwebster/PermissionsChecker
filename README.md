@@ -1,2 +1,4 @@
 # PermissionsChecker
-Check perms
+
+Scan Permission Files and return Groups.
+
